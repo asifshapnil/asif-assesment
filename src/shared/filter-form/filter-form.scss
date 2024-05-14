@@ -1,0 +1,132 @@
+// input[type="date"],
+// input[type="datetime-local"] {
+//   color: #ffffff;
+
+//   &::before {
+//     color: #212529;
+//     content: attr(placeholder);
+//   }
+
+//   &:focus,
+//   &:valid {
+//     color: #212529;
+
+//     &::before {
+//       content: "" !important;
+//       color: #212529;
+//     }
+//   }
+// }
+
+.form-control,
+.form-select {
+  border: 1px solid #0c8188;
+  border-radius: 5px;
+}
+
+.form-switch {
+  input {
+    border: 1px solid #0c8188;
+    background-color: #f7f7f7;
+  }
+}
+
+.filter-form {
+  position: relative;
+  z-index: 111;
+  background-color: #ebebeb;
+  padding: 1rem;
+
+  .form-control {
+    background-color: #fff;
+  }
+
+  .btn {
+    width: 7rem;
+    margin-top: 1rem;
+    // background-color: #0c8b88;
+  }
+}
+
+.filter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  grid-gap: 0.5rem;
+  row-gap: 1rem;
+}
+
+.sec-filter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 0.5rem;
+  align-items: start;
+}
+
+input[type="date"],
+input[type="datetime-local"] {
+  color: #ffffff;
+  position: relative;
+}
+
+input[type="date"]::before,
+input[type="datetime-local"]::before {
+  color: #212529;
+  content: attr(placeholder);
+  position: absolute;
+}
+
+input[type="date"]:focus,
+input[type="date"]:valid,
+input[type="datetime-local"]:focus,
+input[type="datetime-local"]:valid {
+  color: #212529;
+}
+
+input[type="date"]:focus::before,
+input[type="date"]:valid::before,
+input[type="datetime-local"]:focus::before,
+input[type="datetime-local"]:valid::before {
+  content: "" !important;
+  color: #212529;
+}
+
+
+.btn-primary {
+  background-color: #0c8188 !important;
+}
+
+.btn-primary:hover {
+  background-color: #085054 !important;
+}
+
+.resetButton {
+  background-color: #ffffff !important;
+}
+.resetButton:hover {
+  background-color: #eff8fa !important;
+}
+
+/* input[type="datetime-local"] {
+  // color: #ffffff;
+
+  &::before {
+    color: #212529;
+    content: attr(placeholder);
+  }
+
+  &:focus,
+  &:valid {
+    color: #212529;
+
+    &::before {
+      content: "" !important;
+      color: #212529;
+    }
+  }
+} */
+
+// .form-control {
+//   border: 1px solid #0c8188;
+//   border-radius: 5px;
+
+// }

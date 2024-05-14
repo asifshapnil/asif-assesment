@@ -1,0 +1,40 @@
+
+table {
+  position: relative;
+  z-index: 111;
+  thead {
+    background-color: #0c8188 !important;
+    color: #fff !important;
+    th {
+      background-color: transparent !important;
+      color: #fff !important;
+    }
+  }
+}
+
+.disabled {
+  color: #7b7b7b !important;
+}
+
+table,
+th,
+td {
+  border: 2px solid #fff !important;
+  border-collapse: collapse !important;
+  text-align: center !important;
+}
+
+.table-actions {
+  display: flex;
+  color: #0c8188;
+  cursor: pointer;
+}
+
+.table-responsive {
+  z-index: 999;
+  position: relative;
+}
+
+.mt-3 {
+  margin-top: 20px !important;
+}
